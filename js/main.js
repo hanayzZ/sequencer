@@ -139,7 +139,7 @@ $(function () {
             endFun:function(){
                 window.STOPFLAG = !1;
                 clearInterval(timer);
-                $('.ul-sequencer li.current').addClass('key');
+                $('.ul-sequencer li').eq(Result*1-1).addClass('key');
                 setTimeout(function () {
                     $('.ul-sequencer li.card').removeClass('current');
                 },200);
